@@ -77,7 +77,7 @@ sudo make install
 This command outputs information of all network interfaces - we may have to change kismet.conf to the proper network interface (in our case wlan1)
 
 12. We may need to change this configuration file to denote the proper network interface (our ALFA card) ```sudo nano /usr/local/etc/kismet.conf```
-*Please note that your file kismet.conf may be locate in a different folder.*
+*Please note that your file kismet.conf maybe located in a different folder.*
 
 Uncomment, find and replace the line: ```#ncsource=wlan0``` to ```ncsource=wlan1```
 
