@@ -89,7 +89,7 @@ Type ```cpgs``` - This may take awhile for the client to start and connect to th
 
 1. Create a new directory ```mkdir test``` and move into your new folder ```cd test``` (It is important to be in the proper directory before starting kismet)
 2. ```screen -S kismet``` (*Screen allows us to attach or detach to a session which keeps Kismet running when we are no longer near our wireless access point*)
-2. Open Kismet '''sudo kismet'''
+2. Open Kismet ```sudo kismet```
 3. Once running you can detach from your screen session using:
 ```
 CTRL + A
