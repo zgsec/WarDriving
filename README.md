@@ -31,7 +31,7 @@ How a Raspberry Pi Could Ruin Your Life
 
 2. Unzip and flash your new Raspbian OS using [BalenaEtcher](https://www.balena.io/etcher/)
 
-3. Find your raspberry pi on your network. (You can download [Wireless Network Watcher](https://www.nirsoft.net/utils/wireless_network_watcher.html) or access your router to locate the devices on your network.
+3. Find your raspberry pi on your network. (You can download [Wireless Network Watcher](https://www.nirsoft.net/utils/wireless_network_watcher.html) or access your router to locate the devices on your network.)
 
 4. Once you locate the IP address of your Pi, we connect via SSH using [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
