@@ -78,7 +78,7 @@ This command outputs information of all network interfaces - we may have to chan
 12. We may need to change this configuration file to denote the proper network interface (our ALFA card) ```sudo nano /usr/local/etc/kismet.conf```
 *Please note that your file kismet.conf may be locate in a different folder.*
 
-Find and replace the line that contains : ```#ncsource=~~wlan0~~ wlan1```
+Find and replace the line that contains : ```#ncsource=wlan0``` to ```ncsource=wlan1```
 
 13. Now that we have everything downloaded, it is important to test our build before starting our WarDrive. 
 Type ```cpgs``` - This may take awhile for the client to start and connect to the service, after many hours of beating my head against my desk I realized I needed to orient the GPS unit on my windowsill in order for it to connect. 
