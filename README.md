@@ -91,7 +91,8 @@ Type ```cpgs``` - This may take awhile for the client to start and connect to th
 2. ```screen -S kismet``` (*Screen allows us to attach or detach to a session which keeps Kismet running when we are no longer near our wireless access point*)
 2. Open Kismet '''sudo kismet'''
 3. Once running you can detach from your screen session using:
-```CTRL + A
+```
+CTRL + A
 D
 ```
 4. When prompted, click **YES** to auto start Kismet Server.
