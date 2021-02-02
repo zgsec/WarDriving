@@ -102,7 +102,7 @@ D
 Once all the data is collected and you've returned back to your lab, you can close Kismet using ```CTRL+C```
 
 
-Your results can be used to map out the geographical location using [Wigle] (https://wigle.net/map) or Google Earth.
+Your results can be used to map out the geographical location using [Wigle](https://wigle.net/map) or Google Earth.
 
 
 **HAPPY AUDITING**
