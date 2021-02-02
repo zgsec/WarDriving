@@ -41,7 +41,7 @@ Username: pi
 Password: raspberry
 ```
 
-6. BE SURE TO CHANGE THE DEFAULT CREDENTIALS! You can do this using the setup GUI:
+6. **BE SURE TO CHANGE THE DEFAULT CREDENTIALS! You can do this using the setup**:
 
 ```sudo raspi-config```  or by just typing :  ```passwd```
 
@@ -61,8 +61,7 @@ USBAUTO="true"
 GPSD_SOCKET="/var/run/gpsd.sock"
 ```
 
-10. Now we install Kismet! For this project, I used an earlier edition of Kismet, feel free to download whatever version you are most comfortable with.
-
+10. Now we install, unzip and configure Kismet! 
 ```
 wget http://www.kismetwireless.net/code/kismet-2016-07-R1.tar.xz
 tar -xvf kismet-2016-07-R1.tar.xz
