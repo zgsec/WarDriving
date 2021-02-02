@@ -2,7 +2,7 @@
 The Art of Auditing Your Neighborhood 
 
 ## Introduction
-  While the term may sound suspicious or ominous, Wardriving is simply the act of searching and mapping wireless access points. While it is not illegal to scan access points, it is illegal to steal or cause a denial of service so be sure to research your local laws and ordinances before undertaking this project. The objective of this project is to create a map of my town's wireless access points and create a stastical analysis of the varying network encryption protocols.
+  While the term may sound suspicious or ominous, Wardriving is simply the act of searching and mapping wireless access points. While it is not illegal to scan access points, it is illegal to steal or cause a denial of service so be sure to research your local laws and ordinances before undertaking this project. The objective of this project is to create a map of my town's wireless access points and create a statistical analysis of the varying network encryption protocols.
   
   
  ### SETUP
