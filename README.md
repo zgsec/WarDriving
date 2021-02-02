@@ -28,3 +28,65 @@ How a Raspberry Pi Could Ruin Your Life
 Now that you have your hardware, let's get it setup and ready to WARDRIVE!
 
 1. Download the latest version of [Raspbian](https://www.raspberrypi.org/downloads/raspbian/)
+2. Unzip and flash your new Raspbian OS using [BalenaEtcher](https://www.balena.io/etcher/)
+3. Find your raspberry pi on your network. (You can download [Wireless Network Watcher](https://www.nirsoft.net/utils/wireless_network_watcher.html) or access your router to locate the devices on your network.
+4. Once you locate the IP address of your Pi, we connect via SSH using [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+5. Once connected, you will be asked for your username and password - the defaults are normally:
+
+```
+Username: pi
+Password: raspberry
+```
+
+6. BE SURE TO CHANGE THE DEFAULT CREDENTIALS! You can do this using the setup GUI:
+```sudo raspi-config```
+
+or by just typing :
+```passwd```
+
+7. It is important to update after setup so it is necessary to insert the following commands:
+
+```sudo apt-get update```
+```sudo apt-get upgrade -y```
+
+8. Now that the initial setup is complete, we must install the necessary software to perform our audit.
+
+```sudo apt-get install -y screen gpsd libncurses5-dev libpcap-dev tcpdump libnl-dev gpsd-clients python-gps```
+
+9. In order to get GPSD to work properly we must edit the configuration file, please note that **DEVICES** may be different depending on the GPS unit you purchased.
+
+```sudo nano /etc/default/gpsd
+
+START_DAEMON="true"
+GPSD_OPTIONS="-n"
+DEVICES="/dev/ttyUSB0" 
+USBAUTO="true"
+GPSD_SOCKET="/var/run/gpsd.sock"
+```
+
+10. Now we install Kismet! For this project, I used an earlier edition of Kismet, feel free to download whatever version you are most comfortable with.
+
+```
+wget http://www.kismetwireless.net/code/kismet-2016-07-R1.tar.xz
+tar -xvf kismet-2016-07-R1.tar.xz
+cd kismet-2016-07-R1/
+./configure
+make dep
+make
+sudo make install
+```
+
+11. It is important to note the wifi card in use, therefore we must first type 
+```ifconfig```
+This command outputs information of all network interfaces - we may have to change kismet.conf to the proper network interface (in our case wlan1)
+
+12. ```sudo nano /usr/local/etc/kismet.conf```
+Please note that your file kismet.conf may be locate in a different folder.
+
+Find and replace the line that contains 
+```#ncsource=~~wlan0~~ wlan1```
+
+
+
+
+
