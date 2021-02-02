@@ -25,3 +25,6 @@ How a Raspberry Pi Could Ruin Your Life
           
   
   
+Now that you have your hardware, let's get it setup and ready to WARDRIVE!
+
+1. Download the latest version of [Raspbian](https://www.raspberrypi.org/downloads/raspbian/)
